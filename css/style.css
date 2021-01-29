@@ -13,16 +13,13 @@ main
 
 #header {
     
-    background-color: #0e0c0c;
-   
-    border-bottom: 4px solid #df1e1e;
+    background-color: #35424a;
+    border-bottom: 2px solid #8a4e3a;
     overflow: auto;
     
 }
 
 #logo {
-   
-    color: #08a3d9;
     display: flex;
     float: left;
     margin-left: 5%;
@@ -41,12 +38,13 @@ main
     color: white;
     text-decoration: none;
     padding:5px;
+    text-transform: uppercase;
 }
-a:hover{
-    background-color: orangered;
+#header-right a:hover{
+    color: orangered;
 }
 #header2{
-    background-color: #0e0c0c;
+    background-color: #35424a;
    
     border-bottom: 4px solid #df1e1e;
     overflow: auto;
@@ -66,7 +64,7 @@ a:hover{
 .sbutton{
     color: white;
     background-color: red;
-    padding:3px;
+    padding:8px;
 
 }
 #formdiv{
@@ -96,7 +94,7 @@ a:hover{
 }
 .myform input[type="text"],.myform input[type="tel"], .myform input[type="email"], .myform textarea
 {
-    padding:5px;
+    padding:15px;
     width:90%;
 }
 .btn{
