@@ -1,0 +1,242 @@
+
+body{
+    margin: 0;
+    height: auto;
+    
+}
+main
+{
+    width: 80%;
+    margin: auto;
+    
+}
+
+#header {
+    
+    background-color: #0e0c0c;
+   
+    border-bottom: 4px solid #df1e1e;
+    overflow: auto;
+    
+}
+
+#logo {
+   
+    color: #08a3d9;
+    display: flex;
+    float: left;
+    margin-left: 5%;
+}
+
+
+
+#header-right {
+    float: right;
+    width: 300px;
+    margin-right: 5%;
+    margin-top: 20px;
+    text-align: center;
+}
+#header-right a{
+    color: white;
+    text-decoration: none;
+    padding:5px;
+}
+a:hover{
+    background-color: orangered;
+}
+#header2{
+    background-color: #0e0c0c;
+   
+    border-bottom: 4px solid #df1e1e;
+    overflow: auto;
+}
+#header2mesg{
+    color:white;
+    float:left;
+    margin-left: 5%;
+}
+#header2-right{
+    float: right;
+    width:300px;
+    margin-right: 5%;
+    margin-top: 20px;
+    text-align: center;
+}
+.sbutton{
+    color: white;
+    background-color: red;
+    padding:3px;
+
+}
+#formdiv{
+    width: 70%;
+    float: left;
+    margin: 5px;
+    margin-right: 0px;
+}
+#addressdiv{
+    margin:5px;
+    margin-left: 0px;
+    width: 20%;
+    float:left;
+    border:1px solid green;
+    padding: 25px 10px;
+
+}
+.clear{
+    clear: both;
+}
+.myform{
+    padding:20px;
+    border: 1px solid green;
+}
+.myform label{
+    display: block;
+}
+.myform input[type="text"],.myform input[type="tel"], .myform input[type="email"], .myform textarea
+{
+    padding:5px;
+    width:90%;
+}
+.btn{
+    background-color:red;
+}
+footer{
+    padding:20px;
+    background-color: red;
+    text-align: center;
+}
+@media screen and (max-width: 700px)
+{
+    #logo{
+        
+    color: #08a3d9;
+    display: flex;
+    float: left;
+    margin-left: 0%;
+}
+#header-right {
+    float: right;
+    
+    margin-right: 0%;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#header2mesg{
+    color:white;
+    float:left;
+    margin-left: 0px;
+    font-size: smaller;
+}
+#header2-right{
+    float: right;
+    
+    margin-right: 0px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    /*by default they are in row , they are reponsible and fexible*/
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+}
+#flex1{
+    flex: 1;
+    
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 3px;
+    
+}
+#flex2{
+    flex: 1; /*give size to box*/
+    border: 1px solid grey;
+    margin: 3px;
+    padding: 10px;
+}
+#flex3{
+    flex: 1;
+    border: 1px solid grey;
+    margin: 3px;
+    padding: 10px;
+}
+#getquote{
+    width:30%;
+    color: white;
+    float: right;
+    background-color: rgb(43, 42, 42);
+    margin-right: 10%;
+    
+    
+}
+.myforms{
+    padding:20px;
+   
+}
+.myforms label{
+    display: block;
+}
+.myforms input[type="text"],.myforms input[type="tel"], .myforms input[type="email"], .myforms textarea
+{
+    padding:5px;
+    width:90%;
+}
+#about{
+    width:50%;
+    float: left;
+    margin-left: 8%;
+}
+#info{
+    width:20%;
+    float: right;
+    margin-right: 11%;
+    color: white;
+    background-color: rgb(48, 47, 47);
+    margin-top: 3%;
+    padding: 10px;
+}
+.container{
+    background-image: url("../image/image1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    
+    height: 44vh;
+    margin: 0;
+    background-attachment: fixed;
+}
+.centered{
+        font-weight: bold;
+        width:100%;
+        font-size: 45px;
+        color: yellow;
+        position: absolute;
+        top: 40%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+      
+}
+.bottom{
+    position: absolute;
+    color: yellow;
+    width: 100%;
+        top: 50%;
+        left: 55%;
+        transform: translate(-35%, -40%);
+}
+.caption img{
+    width :50%;
+    height: 70%;
+}
+#imagelayout{
+    display: flex;
+}

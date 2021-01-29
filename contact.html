@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section>
+        <div id="header">
+            <div id="logo">
+                <h2>ABC</h2>
+                <h2>web design</h2>
+            </div>
+            
+            <div id="header-right">
+                <a href="index.html">home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+        </div>
+    </section>
+    <section>
+        <div id="header2">
+            <div id="header2mesg">
+                <h4>subscribe to monthly newsletter</h4>
+            </div>
+            <div id="header2-right">
+                <input  type="text" placeholder="Please enter your email" name="sname">
+                <button class="sbutton" >subscribe</button>
+                
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="formdiv">
+            <form action="mailto:krishnakaravadra7@gmail.com" method="POST" enctype="text/plain" class="myform">
+                <fieldset>
+                    <legend>your detail</legend>
+                    
+                        <label>Name</label>
+                        <input type="text" name="name" >                               <!--name is very important for database-->
+                        <br>
+                        <label>gender</label>
+                        male<input type="radio" name="gender" value="male">
+                        female<input type="radio" name="gender" value="female">
+                        other<input type="radio" name="gender" value="other">
+                        <br>
+    
+                        <label>phone </label>
+                        <input type="tel" name="phone">  
+                        <br>
+                        <label>email</label>
+                        <input type="email" name="email" required>  
+                        <br>
+                        
+                        <label>message</label>
+                        <textarea name="message"></textarea> 
+                        <br>
+                        
+                        <input class="btn" type="submit" name="submit">  
+                         <br> 
+            </fieldset>                                     
+            </form>
+        </div>
+        <div id="addressdiv">
+            <address>
+                just it trainning<br>
+                2nd floor, st clares<br>
+                london, ec3n 2ndd<br>
+                phone: <a href="tel: 02089292922">02089292922</a><br>
+                email: <a href="mailto: info@justit.co.uk">click to email us</a>
+    
+            </address>
+    
+        </div>
+        
+            <div class="clear"></div>
+            
+            <footer>ABC web Designer and Devlopment &copy; 2018</footer>
+        </div>
+    </section>
+</body>
+</html>
