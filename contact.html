@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact page</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <main>
     <section>
-        <div id="header">
-            <div id="logo">
-                <h2>ABC</h2>
-                <h2>web design</h2>
-            </div>
-            
-            <div id="header-right">
-                <a href="index.html">home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            
+    <div id="header">
+        <div id="logo">
+            <h2 style="color:#e96f3f;"> ABC </h2> 
+            <h2 style="color: white; margin-left: 5px;"> Web Design </h2>
         </div>
-    </section>
+     
+        <div id="header-right">
+            <a href="index.html">home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</section>
+
     <section>
         <div id="header2">
             <div id="header2mesg">
@@ -33,35 +36,60 @@
                 <button class="sbutton" >subscribe</button>
                 
             </div>
-        </div>
     </section>
-    <section>
+    <section >
+        <div style="width:70%; gap:16px; margin:30px auto; display:flex; justify-content:center;">
         <div id="formdiv">
             <form action="mailto:krishnakaravadra7@gmail.com" method="POST" enctype="text/plain" class="myform">
                 <fieldset>
-                    <legend>your detail</legend>
+                    <legend>Your details</legend>
                     
-                        <label>Name</label>
-                        <input type="text" name="name" >                               <!--name is very important for database-->
+                    <br>
+                    <br>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Please enter your name">
+                      </div>
+                      <br>
+                      <label>Gender</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                         Female
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                         Other
+                        </label>
+                      </div>
+                      <br>
+
+
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">+44</span>
+                        <input type="text" class="form-control" placeholder="Mobile" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
                         <br>
-                        <label>gender</label>
-                        male<input type="radio" name="gender" value="male">
-                        female<input type="radio" name="gender" value="female">
-                        other<input type="radio" name="gender" value="other">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input required type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
                         <br>
-    
-                        <label>phone </label>
-                        <input type="tel" name="phone">  
-                        <br>
-                        <label>email</label>
-                        <input type="email" name="email" required>  
-                        <br>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea placeholder="Please enter your message" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
                         
-                        <label>message</label>
-                        <textarea name="message"></textarea> 
                         <br>
-                        
-                        <input class="btn" type="submit" name="submit">  
+                        <button type="submit" name="submit" class="btn btn-primary">Send</button>
                          <br> 
             </fieldset>                                     
             </form>
@@ -77,11 +105,13 @@
             </address>
     
         </div>
+    </div>
         
             <div class="clear"></div>
             
             <footer>ABC web Designer and Devlopment &copy; 2018</footer>
         </div>
     </section>
+</main>
 </body>
 </html>

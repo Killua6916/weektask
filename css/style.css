@@ -1,54 +1,64 @@
-
 body{
-    margin: 0;
     height: auto;
-    
+    margin:0;
 }
+
 main
 {
     width: 80%;
     margin: auto;
-    
 }
 
 #header {
-    
-    background-color: #0e0c0c;
-   
-    border-bottom: 4px solid #df1e1e;
-    overflow: auto;
-    
+    margin:0 !important;
+    background-color: #35424a !important;
+    border-bottom: 2px solid #e96f3f !important;
+    overflow: hidden !important;
+    padding: 10px !important;
 }
 
 #logo {
-   
-    color: #08a3d9;
-    display: flex;
-    float: left;
-    margin-left: 5%;
+    color:#8b4d3f !important;
+    float: left !important;
+    margin-left: 5% !important;
 }
 
 
+h1 {
+    color: white; margin-left: 5px !important;
+    font-size: 40px !important ;
+    line-height: 0.6 !important;
+    margin:0 !important;
+}
+
+ h2 {
+ font-size: 25px !important;
+ display: inline-flex !important;
+}
 
 #header-right {
-    float: right;
-    width: 300px;
-    margin-right: 5%;
-    margin-top: 20px;
-    text-align: center;
+    float: right !important;
+    width: 300px !important;
+    margin-right: 0% !important;
+    margin-top: 30px !important;
+    text-align: center !important;
+    font-size: 14px;
 }
-#header-right a{
+#header-right a
+{
     color: white;
     text-decoration: none;
     padding:5px;
+    text-transform: uppercase;
 }
-a:hover{
-    background-color: orangered;
+
+#header-right a:hover{
+    color: #ef9f2d;
 }
+
 #header2{
-    background-color: #0e0c0c;
-   
-    border-bottom: 4px solid #df1e1e;
+    background-color: #35424a;
+    border-bottom: 4px solid  #e96f3f;
     overflow: auto;
 }
 #header2mesg{
@@ -56,32 +66,39 @@ a:hover{
     float:left;
     margin-left: 5%;
 }
+
+#header2-right input[type=text] {
+padding: 8px;
+margin: 0;
+}
+
 #header2-right{
     float: right;
-    width:300px;
-    margin-right: 5%;
-    margin-top: 20px;
-    text-align: center;
+    width:50%;
+    margin-right: 2%;
+    margin-top: 14px;
+    text-align: right;
 }
 .sbutton{
     color: white;
     background-color: red;
-    padding:3px;
+    padding:8px;
 
 }
 #formdiv{
-    width: 70%;
+    flex:3;
     float: left;
-    margin: 5px;
-    margin-right: 0px;
+    margin: auto;
+
 }
+
 #addressdiv{
-    margin:5px;
+    flex:1;
+    align-self: flex-start;
     margin-left: 0px;
-    width: 20%;
     float:left;
     border:1px solid green;
-    padding: 25px 10px;
+    padding: 25px 10px;s
 
 }
 .clear{
@@ -90,13 +107,13 @@ a:hover{
 .myform{
     padding:20px;
     border: 1px solid green;
-}
+} 
 .myform label{
     display: block;
 }
 .myform input[type="text"],.myform input[type="tel"], .myform input[type="email"], .myform textarea
 {
-    padding:5px;
+    padding:15px;
     width:90%;
 }
 .btn{
@@ -104,41 +121,11 @@ a:hover{
 }
 footer{
     padding:20px;
-    background-color: red;
+    background-color:#e96f3f;
     text-align: center;
-}
-@media screen and (max-width: 700px)
-{
-    #logo{
-        
-    color: #08a3d9;
-    display: flex;
-    float: left;
-    margin-left: 0%;
-}
-#header-right {
-    float: right;
-    
-    margin-right: 0%;
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-#header2mesg{
-    color:white;
-    float:left;
-    margin-left: 0px;
-    font-size: smaller;
-}
-#header2-right{
-    float: right;
-    
-    margin-right: 0px;
-    margin-top: 10px;
-    text-align: right;
-}
-
-
+    color: white;
+    height: 10vh;
+    margin:0;
 }
 
 #container{
@@ -151,23 +138,25 @@ footer{
 }
 #flex1{
     flex: 1;
-    
-    border: 1px solid grey;
+    border: 2px solid lightslategray;
     padding: 10px;
     margin: 3px;
-    
+    background-color: lightgray;
 }
 #flex2{
     flex: 1; /*give size to box*/
-    border: 1px solid grey;
+    border: 2px solid lightslategray;
     margin: 3px;
     padding: 10px;
+    background-color: lightgray;
+
 }
 #flex3{
     flex: 1;
-    border: 1px solid grey;
+    border: 2px solid lightslategray;
     margin: 3px;
     padding: 10px;
+    background-color: lightgray;
 }
 #getquote{
     width:30%;
@@ -209,20 +198,19 @@ footer{
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat ;
-    
     height: 44vh;
     margin: 0;
+    padding-top: 0%;
     background-attachment: fixed;
 }
 .centered{
-        font-weight: bold;
-        width:100%;
-        font-size: 45px;
-        color: yellow;
-        position: absolute;
-        top: 40%;
-        left: 80%;
+        color: #ce9b4c;
+        position: relative; 
+        top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%);
+        text-align: center;
+        justify-content: center;
       
 }
 .bottom{
@@ -234,9 +222,68 @@ footer{
         transform: translate(-35%, -40%);
 }
 .caption img{
-    width :50%;
+    width: 30%;
     height: 70%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.caption img:hover {
+    background-color:white;
+}
+
+.caption {
+    padding-bottom: 10px;
 }
 #imagelayout{
     display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f0f0f0;
 }
+
+
+
+
+@media screen and (max-width: 700px)
+{
+    main
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    #logo{
+        
+    color: #08a3d9;
+    display: flex;
+    float: left;
+    margin-left: 0%;
+}
+#header-right {
+    float: right;
+    
+    margin-right: 0%;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#header2mesg{
+    color:white;
+    float:left;
+    margin-left: 0px;
+    font-size: smaller;
+}
+#header2-right{
+    float: right;
+    
+    margin-right: 0px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+
+}
+
+
